@@ -1,7 +1,7 @@
 import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 import {FaHome} from 'react-icons/fa'
 import {FcAbout} from 'react-icons/fc'
-import {BiGitBranch} from 'react-icons/bi'
+import {BsGithub} from 'react-icons/bs'
 
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
@@ -21,7 +21,7 @@ function Header() {
   return (
     <header className='header'>
       <div className='logo'>
-        <Link to='/'> <BiGitBranch size={50}/> Find GitHub User</Link>
+        <Link to='/'> <BsGithub size={50}/> Find GitHub User</Link>
       </div>
       <ul>
         {user ? (
